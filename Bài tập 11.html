@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *:hover { outline: 5px solid rgb(255,0,0); }
+        
+        section, header, footer, nav, article, aside, figure, figcaption {
+            border: 1px solid rgb(255,255,255);
+            background-color: rgba(153,153,153,.25);
+            display: block;
+            padding: 5px;
+            margin: 5px;
+        }
+        
+        section, aside {
+            float: left;
+        }
+        
+        header, footer {
+            clear: both;
+        }
+        
+        #pagecontent {
+            margin: 0 auto;
+            max-width: 1045px;
+            min-width: 480px;
+            width: 100%;
+        }
+        
+        #pageheader, #pagefooter { 
+            max-width: 1020px;
+            min-width: 480px;
+            width: 100%;
+        }
+        
+        #sectioncontent1 {
+            max-width: 600px;
+            min-width: 400px;
+            width: 100%;
+        }
+        
+        #asidecontent1 {
+            max-width: 400px;
+            width: 100%;
+        }
+
+        a {
+            color: purple;
+        }
+        
+        a:visited {
+            color: blue;
+        }
+    </style>
+    <style>
+        nav a {
+            margin-right: 20px;
+            font-size: 18px;
+            
+        }
+
+        nav {
+        text-align: center; /* Căn giữa các liên kết */
+        }
+
+        .program-dai-hoc a, .program-lien-thong a {
+            color: blue;
+        }
+
+        .program-dai-hoc a:visited, .program-lien-thong a:visited {
+            color: purple;
+        }
+
+        .program-sau-dai-hoc a, .program-quoc-te a {
+            color: red;
+        }
+
+        .program-sau-dai-hoc a:visited, .program-quoc-te a:visited {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <main id="pagecontent" class="pagecontent">
+
+        <header id="pageheader" class="header pageheader">
+            <h1 class="sitename"><a href="/" rel="home" title="Home">HTML5 Structure</a></h1>
+            <img style="width:600pt;height:200pt" alt="Logo Khoa BIT" src="./th (1).jpg" />
+            <nav id="globalnav" class="nav globalnav">
+                <h2>
+            
+                    <span class="program-dai-hoc">
+                        <a href="https://bit.ueh.edu.vn/bit/dao-tao/dai-hoc" target="_blank">Chương trình Đại học</a>
+                    </span>
+            
+                    <span class="program-lien-thong">
+                        <a href="https://bit.ueh.edu.vn/bit/dao-tao/dai-hoc-lt" target="_blank">CT Liên thông Đại học</a>
+                    </span>
+            
+                    <span class="program-sau-dai-hoc">
+                        <a href="https://bit.ueh.edu.vn/bit/dao-tao/sau-dai-hoc" target="_blank">Chương trình Sau đại học</a>
+                    </span>
+            
+                    <span class="program-quoc-te">
+                        <a href="https://bit.ueh.edu.vn/bit/dao-tao/dai-hoc-nn" target="_blank">Chương trình quốc tế</a>
+                    </span>
+
+                </h2>
+            </nav>
+        </header>
+
+        <section id="sectioncontent1" class="section sectioncontent">
+            <header id="sectionheader1" class="header sectionheader">
+                <h2><strong>Chương trình Đại học</strong></h2>
+            </header>
+
+            <article id="articlecontent1" class="article articlecontent">
+                <header id="articleheader1" class="header articleheader">
+                    <h3><a href="https://bit.ueh.edu.vn/chuyen-nganh-he-thong-hoach-dinh-nguon-luc-doanh-nghiep-erp" target="_blank">HT hoạch định nguồn lực doanh nghiệp (ERP)</a></h3>
+                </header>
+                <p>Giới thiệu Chương trình đào tạo Hệ thống hoạch định nguồn lực doanh nghiệp thuộc ngành Hệ thống thông tin quản lý tại UEH được xây dựng theo tiêu chuẩn tiên tiến hướng đến mục tiêu đào tạo nguồn nhân lực chất lượng cao đạt yêu cầu trong nước và quốc tế, có đủ kiến […]</p>
+                <figure id="figure1" class="figure">
+                    <img style="width:410pt;height:200pt" alt="ERP" src="https://bit.ueh.edu.vn/wp-content/uploads/2018/05/ERP-770x385.jpg"/>
+                    <figcaption class="figcaption">HT hoạch định nguồn lực doanh nghiệp (ERP)</figcaption>
+                </figure>
+                <footer id="articlefooter1" class="footer articlefooter">
+
+                </footer>
+            </article>
+        </section>
+
+        <aside id="asidecontent1" class="aside asidecontent">
+            <header class="header sectionheader">
+                <h2><strong>Liên kết</strong></h2>
+            </header>
+
+            <article>
+                <header class="header articleheader">
+                    <h3><a href="https://bit.ueh.edu.vn/chuyen-nganh-he-thong-thong-tin-kinh-doanh" target="_blank">Hệ thống thông tin kinh doanh</a></h3>
+                </header>
+                <p>Giới thiệu Chương trình Hệ thống thông tin kinh doanh thuộc ngành Hệ thống thông tin quản lý. Trong thời đại Công nghiệp 4.0, công cuộc chuyển đổi số gần như đã trở thành một trong những mục tiêu đứng đầu của các tổ chức doanh nghiệp trong và ngoài nước để mong muốn khẳng […]</p>
+                <figure>
+                    <img style="width:270pt;height:200pt" alt="Hệ thống thông tin kinh doanh" src="https://bit.ueh.edu.vn/wp-content/uploads/2017/06/mis-770x385.jpg"/>
+                    <figcaption>Hệ thống thông tin kinh doanh</figcaption>
+                </figure>
+            </article>
+        </aside>
+
+        <footer id="pagefooter" class="footer pagefooter">
+            <p>Page Footer</p>
+        </footer>
+    </main>
+</body>
+</html>
